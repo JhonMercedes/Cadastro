@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="campo">
+        <h1 id="titulo">Cadastro Devs</h1>
+        <p id="subtitulo">Complete as informções abaixo</p>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <legend></legend>
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+            </div>
+            <div class="campo">
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Insira CPF valido" required>
+            </div>
+            <div class="campo">
+                <label for="data">Data Nascimento</label>
+                <input type="date" name="data" id="data" required>
+            </div>
+            <div class="campo">
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" placeholder="Avendia 515, n 488" required>
+            </div>
+            <div class="campo">
+                <label for="contato">Contato</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(DDD) 9 9999 9999" required>
+                <label>E-mail</label>
+                <input type="email" name="email" id="email" placeholder="dev@novomundo.com.br" required>
+            </div>
+
+            <div class="campo">
+                <label>Formação</label>
+                <label>
+                    <input type="radio" name="op1" value="op1" >Analise Desenvolvimento
+                </label>
+                <label>
+                    <input type="radio" name="op2" value="op2">Segurança da Informação
+                </label>
+                <label>
+                    <input type="radio" name="op3" value="op3">Engenharia Computação
+                </label>
+            </div>
+                <div class="campo">
+                    <br>
+                    <label>Detalhe suas habilidades</label>
+                    <textarea rows="4" style="width: 26em;" id="habilidades" name="habilidades"></textarea>
+                </div>
+               
+        </fieldset>
+        <button class="botao" type="submit" onsubmit="">Cadastrar</button>
+        
+
+    </form>
+</body>
+
+</html>
